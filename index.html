@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<div class="header">
+	<div class="container header">
 		<h1>JS Photo Gallery</h1>
 	</div>
 	<hr>
@@ -34,39 +34,20 @@
 		</div>
 	</div>
 	<hr>
-	<div id="main">
+	<div class= container id="main">
 		<img src="img/img-3.jpg" id="main-img" class="thumbnail" alt="image">
 	</div>
 
 	<script>
-		document.querySelector('#pic1').onclick = function () { pic1() }
+		document.querySelector('#pic1').onclick = function pic1() { document.getElementById("main-img").src = "img/img-7.jpg"; }
 
-		document.querySelector('#pic2').onclick = function () { pic2() }
+		document.querySelector('#pic2').onclick = function pic2() { document.getElementById("main-img").src = "img/img-2.jpg"; }
 
-		document.querySelector('#pic3').onclick = function () { pic3() }
+		document.querySelector('#pic3').onclick = function pic3() { document.getElementById("main-img").src = "img/img-4.jpg"; }
 
-		document.querySelector('#pic4').onclick = function () { pic4() }
+		document.querySelector('#pic4').onclick = function pic4() { document.getElementById("main-img").src = "img/img-6.jpg"; }
 
-
-		document.querySelector('#pic5').onclick = function () { pic5() }
-
-
-
-		function pic1() {
-			document.getElementById("main-img").src = "img/img-7.jpg";
-		}
-		function pic2() {
-			document.getElementById("main-img").src = "img/img-2.jpg";
-		}
-		function pic3() {
-			document.getElementById("main-img").src = "img/img-4.jpg";
-		}
-		function pic4() {
-			document.getElementById("main-img").src = "img/img-6.jpg";
-		}
-		function pic5() {
-			document.getElementById("main-img").src = "img/img8.jpg";
-		}
+		document.querySelector('#pic5').onclick = function pic5() { document.getElementById("main-img").src = "img/img8.jpg"; }
 	</script>
 </body>
 
